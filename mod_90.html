@@ -1,0 +1,53 @@
+<html><head><title>Mod Description</title></head><body><h2><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2286124931' target='_blank'>Mod 90</a></h2><p>Show health bar above zombie heads and damage dealt
+Health bar features:
+shown when player hit zombie for first time and health bar is not visible
+(100% = current zombie health)
+health loss is animated
+(orange part of bar)
+bar will hide itself after 10 in-game minutes without receiving damage
+can be tweaked in options
+Floating text features:
+text is shown once damage is detected
+(this is currently done during OnPlayerUpdate which is way faster than OnZombieUpdate)
+fire damage is displayed with orange text
+(damage is accumulated and shown each 5 in-game seconds otherwise it show extreme small numbers)
+other damage types are show ASAP with red color
+green text means zombie is being healed
+(yes zombies can heal when they eat corpse)
+can be tweaked in options
+Current/Max HP features:
+text anchor around health bar
+(max = zombie health when player hit zombie for first time)
+visible only on reasonable zoom levels
+not enabled by default
+can be tweaked in options
+Mod options:
+there is new "tab" in game options screen which contain mod configuration
+some configuration is not reflected immediately for zombie which has already health bar in active state
+changes in configuration are persistent and global (client side only)
+Older versions
+: can be found on
+github
+[github.com]
+Superb Survivors!
+compatibility - 02/05/2021
+Last update of this mod should be working with Superb Survivors without known issues, and how it works? in Superb Survivors are survivors spawned as AI controlled players so they share all functionality e.g. if survivor is attacking zombie, health bar will show up and you will see damage dealt. Health bar will also appear above survior head when damaged.
+Advance Trajectory
+compatibility (07/04/2023)
+Advance Trajectory mod added all events that are needed by this mod. Compatibility was tested on fresh save and everthing is working
+Arsenal(26)Gunfighter mod
+compatibility
+Enabling "Debug Confirmation Level" option in the mod options menu will cause damage numbers print out in the chat under "radio" in Multiplayer (figured out by
+Burylown
+)
+Known issues:
+B41 - car "hits" are not shown (11/25/2020 - currently there is no lua even on vehicle hit, so this goes on hold for now)
+Future plans:
+Mod is currently considered as feature complete
+Tested on SP-B40.43 | SP-B41.78 | MP-B41.78
+Multiplayer support
+B40 - not supported
+B41.78 - working (06/23/2023)
+Tags: B40,B41,Combat
+Workshop ID: 2286124931
+Mod ID: CombatText</p></body></html>

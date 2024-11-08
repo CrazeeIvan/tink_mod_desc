@@ -1,0 +1,98 @@
+<html><head><title>Mod Description</title></head><body><h2><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2996978365' target='_blank'>Mod 303</a></h2><p>Are you tired of backpacks being too small?
+Have you ever spent 3 hours digging around looking for a decent bag only to get stuck with the school bag?
+Do you want a backpack upgrade mod that works with all modded backpacks?
+This is the mod for you!
+Introducing Dynamic Backpack Upgrades!
+The only backpack upgrade mod that can upgrade EVERY inventory container item in the game!
+Upgrade Mechanics Explanation
+Each container item will now have 1 or 2 Upgrade Slots. Containers that can be worn on your back get 2 slots. all other containers get 1.
+At level 10 tailoring, you can add an additional upgrade to any bag.
+To add an upgrade you will need the upgrade item you want to add, a sewing needle, and at least 1 unit of thread.
+To remove upgrades you will need a pair of scissors.
+Upgraded bags retain their upgrades until the item is destroyed or the upgrade is removed. This means you can add an additional upgrade to other people's bags.
+Obtaining/Crafting Upgrade Items
+All upgrade items can be looted in the world, and all but the best ones can be crafted.
+The stats for each upgrade and spawn rates for each tier of item can be changed in the Sandbox settings.
+These stats are always displayed as part of the Upgrade Items tooltip and changes dynamically based on the sandbox settings of the world.
+Military upgrades cannot be crafted, but you can convert Military upgrades into their opposite type if you have level 10 tailoring. (Meaning you can turn a Military Capacity upgrade into a Military Weight Reduction upgrade)
+Capacity Upgrades
+Bag capacity upgrades have 2 components to them. Flat Bonuses and Multipliers.
+The Bonus will add a flat amount of capacity regardless of what kind of bag its attached to.
+The Multiplier will add a percentage bonus to the bags existing size, rounding to the nearest whole number.
+Example; a 10% bonus for the duffel bag would increase its capacity from 18 to 20. the bonus from the multiplier is +1.8, rounded up to to a +2.
+Formula; Capacity = (BaseCapacity*(1+MultiplierBonus))+FlatBonus
+Container Capacity is still affected by the Organized and Disoragnized traits. This leads to some pretty insane bag capacities with modded backpacks. (Brita's)
+Default values for Capacity upgrades;
+Type
+Multiplier
+Bonus
+Crafting Requirements
+Cloth
++10%
++1
+Tailoring 3
+Denim
++20%
++1
+Tailoring 5
+Leather
++25%
++2
+Tailoring 7
+Military
++35%
++2
+Loot Only
+Weight Reduction Upgrades
+Weight reduction upgrades only have 1 component, their Weight Reduction Efficiency bonus.
+This value is not a flat bonus to the weight reduction of an item, and the math is fairly complicated compared to the capacity bonus.
+The efficiency increase is a bonus based on the missing weight reduction between its current value and 100%.
+Simply put, increasing a bags weight reduction efficiency by 50% will cause the items in the bag to weigh half as much as they did before. Increasing the efficiency by 25% will make the items in the bag weigh 25% less than they did before. and so on.
+Example 1: the Big Hiking Bag has an 80% weight reduction value. giving it a 50% bonus adds an even 10% bonus (20*0.5) bringing it up to a 90% reduction.
+Example 2: the Duffel bag has a 65% weight reduction, giving it a 35% bonus results in a bonus of 12.25, rounded to 12% totaling a 77% reduction
+Example 3: the Military Backpack has a 87% weight reduction, giving it a 20% bonus would add  2.6 (13*0.2), rounded up to 3%, totaling 90%
+Formula; Weight Reduction = 100-( (100-BaseWR)*TotalEfficiencyBonus )
+Type
+EffiencyBonus
+Crafting Requirements
+Cloth
++15%
+Tailoring 3
+Denim
++25%
+Tailoring 5
+Leather
++35%
+Tailoring 7
+Military
++50%
+Loot Only
+Is this mod compatible with Inventory Tetris?
+Yes and no, I've never used inventory tetris so i don't know how it works. I've been told in the vanilla game it segments the bags into various compartments. and that does break with modified inventory size values. turning it into quote "one big box" but otherwise I've been told it does work functionally.
+I can't pick up my backpack / My backpack is stuck in a container
+Yeah.. this is an issue caused by the 50 weight hard limit on every character. The game will not let you pick up an item that would put your character's total weight over 50, regardless of strength or modified carry weight values. (pack mule)
+Weight reduction doesn't apply until you have the bag equipped, and since you have to pick up the bag before you can equip it, there's a period of time where you have to be able to carry the full weight of the backpack. for most normal bags this isn't an issue.
+But, when dealing with upgraded or modded bags, its possible to fill a bag so much that picking it up would put you over that 50 weight hard limit, which prevents you from picking it up.
+Since the bag is probably equipped when you fill it, its actual weight wont be applied to the character immediately. But if you drop the bag or put it in a container. it now weights the full weight which can prevent you from picking it back up.
+To fix the problem, move the bag to the floor directly if its not already there. Once the bag is on the floor you can access its inventory like any other container and take some stuff out to reduce the weight, then you can pick up the bag properly, put it on, and then put the stuff back into the bag from the floor. Its an awkward fix, but there's no way to fix it without pseudo-permanently changing the weight of items manually, which could cause tons of other issues.
+Is this mod compatible with XYZ?
+You can answer this question yourself pretty easily,
+If the mod in question changes existing items WITHOUT crafting them using zomboid's normal crafting menu. then it may have a conflict. Even if it does, the conflict should not break either mod.
+If the mod adds new items or uses the crafting system to upgrade them, then it should be fully compatible. save for the possiblity of accidentally deleting your upgrades.
+Crafting Upgraded Items Warning
+When you upgrade an item with this mod, that upgrade info is saved as part of the items Mod Data. If you use the upgraded item to craft another item, it will be deleted and the upgrades will be lost.
+This isn't too likely, as very few mods use backpacks as crafting ingredients, but it's worth a warning anyway.
+Known Issues
+Some minor text clipping issues with pretty much any other mod that adds custom Tooltips.
+Sometimes items have their stats reset, Upgraded items will not automatically fix their stats by default. This was done to hopefully avoid conflicts with other mods that change item stats. If an item has unexpected stats then an option to Fix Upgrades will appear in the context menu for that item.
+Translations;
+Traditional Chinese ( CH ) by Roc Tseng
+Russian ( RU ) by Fleshka and Arikahika
+Simplified Chinese ( CN ) by LotharioSun
+German ( DE ) by Kandlo
+Spanish ( ES ) by Pela667
+I'm usually pretty active on my workshop pages comment sections but i also have a discord.
+If you'd like to help translate one of my mods or just need help sorting something out feel free to join the discord and message me.
+https://discord.gg/FgvW5vDyYV
+Workshop ID: 2996978365
+Mod ID: LazoloDynamicBackpackUpgrades</p></body></html>

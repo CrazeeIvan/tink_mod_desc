@@ -1,0 +1,28 @@
+<html><head><title>Mod Description</title></head><body><h2><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2915430406' target='_blank'>Mod 279</a></h2><p>Fix Inventory Tooltip lag
+This mod fixes a performance issue in the game that causes it to freeze up for a period of time, most commonly whenever you rip up clothing.
+The problem becomes exponentially worse with the more clothing item mods you have, hence why it's the primary culprit.
+The code is a classic example of "accidentally quadratic" If you care about the details, read on. If not, just download it.
+What the vanilla game does that causes this problem
+The game wants to show you a tooltip of the top 10 items that are valid for a given recipe, so it:
+1. Builds a complete list of all valid items, in no particular order.
+2. Sorts this complete list to move all items you actually have to the top -
+O(n)
+complexity.
+3. Removes any items that are considered duplicates by virtue of being applicable to different slots (e.g. Left/right handed wristwatch) -
+O(n^2)
+complexity!
+4. Renders the top 10 items of the list, ignoring anything else.
+This is wasteful because it processes the full list of items, even though we only care about the top 10.
+What this mod makes it do
+1. We build a complete list of valid items, but any items that exist in your inventory are sent to the start of the list,
+at the point of insertion
+.
+2. The list is truncated to the first 10 items and only these are sorted. We store the original length of the list for later -
+O(1)
+complexity.
+3. Deduplication occurs as in vanilla, but, again, the list is now only 10 items long -
+O(1)
+complexity.
+4. We render the list again. If there were more than 10 items, we ensure that the "and X more" text is computed correctly from the pre-truncation list size.
+Workshop ID: 2915430406
+Mod ID: FixTooltipLag</p></body></html>

@@ -1,0 +1,74 @@
+<html><head><title>Mod Description</title></head><body><h2><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2719592131' target='_blank'>Mod 35</a></h2><p>Tread's Water Tank Trucks [41.65+]
+This mod adds working water trucks and water tank trailers (and their water tank parts) to the game. It was made for 41.65 version of a game and should work both in SP and MP. Nonetheless I had limited testing capabilities so all bug reports are welcome.
+Vehicles are able to:
+serve as a tap for drinking,
+dispense water to any water container in player inventory,
+get filled from items containing water (that player has in inventory),
+get fully emptied,
+pump water between themselves,
+pump water from "water tiles" (not puddles) and some water holding objects (like Water Barrels, sinks etc.),
+pump water to some water holding objects, but not to others (Water Dispensers, Washing machines etc.),
+pump water into Water Barrels one floor above - via pumping into the sink plumbed to that barrel (plumbing is native functionality),
+have pumping functions blocked by walls, closed doors and windows that are between Water Vehicle and "pump to/from" object,
+get tainted, by adding in or pumping in tainted water,
+get emptied of tainted water and filled once more with clean (tainted flag gets removed on emptying the tank),
+use Water Filter part to dispense clean water (ignoring whether tank contents are tainted),
+vacuum trucks (liquid waste disposal trucks) cannot be cleaned and always dispense tainted water,
+emit sounds during water tank operation.
+Added vehicles:
+Water Trailer (1500 units of water) - Based off TMC (Tsar's Modding Company) KBAC trailer
+Water Truck (3000 units of water) - Based off Filibuster Rhymes Propane Truck
+Army M50 Water Truck (3000 units of water + water filter part) - Based off Filibuster Rhymes M49 Fuel Truck
+Vacuum Truck (3000 units of always tainted water) - Based off Filibuster Rhymes' Propane Truck
+Fire truck (3000 units of water) - Added by toggleable sub-mod, requires
+Filibuster Rhymes' Used Cars
+HBA201 Water Semi-Trailer (10000 units of water + water filter part) - Added by toggleable sub-mod, requires
+KI5 "'82 Oshkosh M911" mod
+Fire truck sub-mod overwrites Filibuster Rhymes Firetruck. It adds Water Tank to the vehicle. Fire trucks water inlet can be found on the side of the truck. Overwriting Filibuster Rhymes file may make his future updates to fire truck incompatible with this mod.
+HBA201 Water Semi-Trailer sub-mod does not overwrite anything. It adds a new trailer to the game. Sub-mod requires
+KI5 "'82 Oshkosh M911" mod
+since it depends on its assets. Future updates to KI5 mod may be incompatible with this mod.
+Water Filter:
+Some Water Tank vehicles are equipped with Water Filter part. It can only be found on those vehicles and while installed it makes the dispensed/pumped water clean (disregarding tainted status of water in the tank). Filter works properly only if it is in good condition. Once it requires service, vehicle will dispense/pump water "as it is" in the tank (either clean or tainted). IF filter is in really bad shape, vehicle will dispense tainted water, even if filled with clean one.
+Water filter can be repaired with proper materials and skills. It can also be uninstalled and vehicle dispenses water "as is" in the tank.
+Filter slowly degrades with each water unit dispensed/pumped from the vehicle. Clean water (in the tank) causes slow degradation, whereas tainted one speeds it up. Uninstalling filter temporarily can be a valid approach in some situations.
+I had to pick some arbitrary values for balance - all constructive balance advice is welcome!
+How to add your own custom water storage vehicles and parts?
+Please look into the discussion topic - Steam limits description length so I had to move it.
+Future:
+I am not a professional programmer, experienced modder nor hardcore Zomboid gamer. I made the mod for myself and a few friends to include on our server. I thought that it might be useful for others therefore I share it on Steam Workshop. I will try to update the mod from time to time and fix any bugs found. Nonetheless I do not promise I will have time and skill to do it on any regular basis.
+If you wish to fuel my modding activities please consider supporting me:
+[ko-fi.com]
+Languages:
+English (EN)
+Polish (PL)
+Dutch (NL) - thanks to my co-worker Nik for checking my translation
+Brazilian Portuguese (PTBR) - translation by Papa_Chad
+German (DE) - translation by Blacky
+Spanish (ES) - translation by ИعşŞ
+Russian (RU) - translation by Smile
+French (FR) - translation by Kagoule
+Traditional Chinese (CH) - translation by sweet-
+Credits:
+I wish to thank a few people (and groups):
+TIS - for making this great game and plenty of code I could chop into shape of my mod,
+Filibuster Rhymes - for creating wonderful mod and allowing me to reuse his assets (models, textures, scripts) as base for my vehicles,
+TMC (Tsar's Modding Company) - for allowing me to reuse their KBAC Trailer and its assets (models, textures, scripts) as base for my water trailer,
+KONIJIMA - for creating great Water and Fuel related mods that inspired me to create this mod and for allowing me to reuse a function from his code,
+PlanetAlgol - for creating fuel truck code for Filibuster Rhymes mod, code that I studied, when I tried to get grasp on how Zomboid fuelling functions work,
+All the mentioned above - one more thanks for writing the code I could study and base on while learning to write this mod,
+Pawel-Commandos - for making custom textures and icons I use in the mod (Textures are adjusted assets from Filibuster Rhymes and TMC),
+KI5 - for allowing me to make water version of his "M967 Fuel Tanker Semi-Trailer" from his "'82 Oshkosh M911" mod and providing me with textures for it,
+All translators.
+Known Issues:
+Vehicle Water tanks and World Objects (e.g. water barrel) can be used by multiple players at once in MP. It will result in wrong final content values since multiple functions overwrite it without acknowledging each other.
+Pumping water into barrels that are connected together (by mod: "Irrigation pipes for farming and water supply [B41+]") can result in "water multiplication". It occurs when barrels "water equalisation" (Irrigation mod) ticks during pumping process. I will try to rewrite pumping function in a way that prevents it.
+Pumping tainted water into the sink (connected to the barrel) results in clean water in barrel. Sink serves as kind of "water filter" in both ways. I personally think it is just a bug or omission of vanilla game, but don't want to strip players of this "filter feature" as some are used to it. I keep it this way to stay more compatible with vanilla game.
+Usage of my code in other mods:
+I do allow usage of my code in other Zomboid mods. If you decide to do so please credit me in description.
+I cannot promise regular updates and long-term support therefore I do allow fixing, upgrading, updating etc. my code and uploading its adjusted versions. Nonetheless, please try contacting me first.
+Once more I only request crediting me for the work done.
+Workshop ID: 2719592131
+Mod ID: RS_WaterCistern
+Mod ID: RS_WaterCistern_FR_Overwrite
+Mod ID: RS_WaterCistern_KI5_Addon</p></body></html>

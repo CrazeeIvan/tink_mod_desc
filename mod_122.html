@@ -1,0 +1,42 @@
+<html><head><title>Mod Description</title></head><body><h2><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2879159332' target='_blank'>Mod 122</a></h2><p>An authentic weapon of war.
+Very few quality swords exist in Knox County, perhaps no more than a handful from Louisville to March Ridge. These antiques were typically kept as ironic playthings by rich hobbyists with an extra couple thousand dollars to throw around. Some were in the possession of paranoid preppers, junkies, and gangbangers who anticipated a time when the knives would come out. Pawnshops were known to certify and trade these swords from time to time, and the Louisville Art Gallery was running an exhibition on fine smithing when the virus broke out. If one is lucky, they might also run into some unfortunate survivor's sword out in the wild, stuck in a zombie. Acquiring a Bastard Sword will turn your character into a demon, able to clear hordes of the undead silently and efficiently.
+----
+The purpose of this mod is to address a gap that I feel is present in the melee weapon meta. There is room for a durable endgame long blade weapon. Unfortunately, most sword and weapon mods on the Workshop include several other items that can throw off the balance of the game. This mod is intended to fill the long blade niche while keeping things as vanilla as possible. The Bastard Sword will provide your character with the rampaging fury of the Katana for much longer than one 10 minute engagement. The tradeoff is that these swords are rarer, heavier, and slower then the Katana.
+The Bastard Sword reachs further (1.5 vs 1.4) than the Katana, but shorter than the Machete Spear (1.55). It has higher damage (10 vs 8), higher crit chance (45% vs 30%), and more multi hits (5 vs 3) than the Katana. However, it swings slower (4 vs 3) and is heavier (3.5 vs 2). The Bastard Sword is much more durable (1/45 vs 1/15), with a higher max condition (13 vs 10). Where Katanas will break after a couple hundred zombies, the Bastard Sword will last for a couple thousand.
+----
+There is a very high chance of finding a few swords the 18 display cases of the Louisville Art Gallery and the 13 display cases in the gallery next door (west). From my testing of melee weapon loot settings; rare(0-3), normal(1-4), abundant(5-9). Common is untested. If you play on extremely rare don't expect to find one.
+After the Art Gallery, the Bastard Sword is best searched for in Pawn Shops, where they are roughly half as common as Katanas.
+Swords will spawn in zombies after 90 days. The chance of finding a sword in a zombie is roughly 20% that of a Katana.
+A list of the distribution tags;
+>Antiques.items, 0.01
+>BarCounterWeapon.items, 0.05
+>DrugShackWeapons.items, 0.5
+>GolfLockers.items, 0.01
+>Hobbies.items, 0.001
+>PawnShopGunsSpecial.items, 0.5
+>PawnShopKnives.items, 0.1
+>LockerClassy.items, 0.01
+>WardrobeMan.items, 0.001
+>WardrobeManClassy.items, 0.01
+>MeleeWeapons.items, 0.5
+>PlankStashMisc.items, 0.1
+>StripClubDressers.items, 0.005
+>GolfTruckBed.items, 0.1
+>DoctorTruckBed.items, 0.1
+>SurvivalistTruckBed.items, 0.1
+>ProceduralDistributions.list.SwordCrate = {
+rolls = 1,
+items = {
+"BastardSword", 8,
+>local SwordCratedistributionTable = {
+all = {
+displaycase = {
+procedural = true,
+procList = {
+{name="SwordCrate", min=25, max=25, forceForRooms="Gallery", weightChance=100},
+----
+This is my first mod. Let me know if you have any issues or conflicts with other mods. Any map mods that add "Gallery" rooms with "displaycase" containers will also spawn Bastard Swords. This mod can be added to an existing save. Swords will spawn in places that have not be explored.
+Give a thumbs up if you enjoy the mod, it helps with exposure in the Workshop.
+----
+Workshop ID: 2879159332
+Mod ID: BastardSword</p></body></html>
